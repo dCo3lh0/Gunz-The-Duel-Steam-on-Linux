@@ -22,6 +22,7 @@ Before starting lets install the proton version used by this tutorial:
 7. Click install and wait until it ends.
 8. Launch the game just a single time it will install `EAC`, `Visual C Redist` and `DirectX` before trying to launch the game
 9. Wait until the launcher crashes.
-10. With the game closed, we will now install MSXML6 (NOT 3!!), with the terminal command: ``protontricks 3139440 msxml6``
+10. With the game closed, we will now install MSXML6 (NOT 3!!), with the terminal command:
+> ``protontricks 3139440 msxml6``
 11. Wait until protontricks is done.
 12. Start the game and have fun.
