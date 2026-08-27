@@ -1,6 +1,8 @@
 # Gunz-The-Duel-Steam-on-Linux
 Here lies my personal configuration method to install and play Gunz: The Duel on Linux collecting the best tips from everyone that helped making this process.
 
+This tutorial was made for report on [ProtonDB](https://www.protondb.com/app/3139440)
+
 ## Downloading and installing ProtonUp-Qt first and installing "Proton-CachyOS-10.0-Sunset-SLR"
 
 Before starting lets install the proton version used by this tutorial:
