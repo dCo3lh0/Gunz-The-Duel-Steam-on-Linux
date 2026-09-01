@@ -18,13 +18,15 @@ Before starting lets install the proton version used by this tutorial:
 2. On Steam > Library, select Gunz: The Duel, press right button and go into properties
 3. On Compatibility tab, set "Force the use of a specific Steam Play compatibility tool"
 4. Select "proton-cachyos-10.0-sunset-slr" from the dropdown.
-5. On General tab add this line to the launch options:
-> ```bash -c 'exec "$@" "STEAM|use1.masangsoft.com|5200|3139440"' -- %command%```
-6. Note if you have the game already installed, first, uninstall it on steam client.
-7. Click install and wait until it ends.
-8. Launch the game just a single time it will install `EAC`, `Visual C Redist` and `DirectX` before trying to launch the game
-9. Wait until the launcher crashes.
-10. With the game closed, we will now install MSXML6 (NOT 3!!), with the terminal command:
+5. Check the ports that steam uses to play the game with this command(usually 5200 or 16101):
+> ```strings ~/.local/share/Steam/appcache/appinfo.vdf | grep -iE 'masangsoft|STEAM\|'```
+6. On General tab add this line to the launch options:
+> ```bash -c 'exec "$@" "STEAM|use1.masangsoft.com|16101|3139440"' -- %command%```
+7. Note if you have the game already installed, first, uninstall it on steam client.
+8. Click install and wait until it ends.
+9. Launch the game just a single time it will install `EAC`, `Visual C Redist` and `DirectX` before trying to launch the game
+10. Wait until the launcher crashes.
+11. With the game closed, we will now install MSXML6 (NOT 3!!), with the terminal command:
 > ``protontricks 3139440 msxml6``
-11. Wait until protontricks is done.
-12. Start the game and have fun.
+12. Wait until protontricks is done.
+13. Start the game and have fun.
