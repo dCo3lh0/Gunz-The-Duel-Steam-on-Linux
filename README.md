@@ -18,7 +18,7 @@ Before starting lets install the proton version used by this tutorial:
 2. On Steam > Library, select Gunz: The Duel, press right button and go into properties
 3. On Compatibility tab, set "Force the use of a specific Steam Play compatibility tool"
 4. Select "proton-cachyos-10.0-sunset-slr" from the dropdown.
-5. Check the ports that steam uses to play the game with this command(usually 5200 or 16101):
+5. Check the ports that steam uses to play the game with this command in terminal(usually 5200 or 16101):
 > ```strings ~/.local/share/Steam/appcache/appinfo.vdf | grep -iE 'masangsoft|STEAM\|'```
 6. On General tab add this line to the launch options:
 > ```bash -c 'exec "$@" "STEAM|use1.masangsoft.com|16101|3139440"' -- %command%```
